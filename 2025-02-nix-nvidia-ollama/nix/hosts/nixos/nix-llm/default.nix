@@ -21,16 +21,16 @@
     interfaces.ens18 = {
       useDHCP = false;
       ipv4.addresses = [{
-        address = "10.42.37.100";
+        address = "192.168.29.45";
         prefixLength = 24;
       }];
     };
-    defaultGateway = "10.42.37.254";
-    nameservers = [ "10.42.37.254" ];
+    defaultGateway = "192.168.29.1";
+    nameservers = [ "8.8.8.8" ];
   };
 
   # System localization
-  time.timeZone = "America/New_York";
+  time.timeZone = "Asia/Kolkata";
   i18n.defaultLocale = "en_US.UTF-8";
 
   services.xserver = {
